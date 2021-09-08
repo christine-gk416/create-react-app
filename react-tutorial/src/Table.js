@@ -1,5 +1,3 @@
-import React, { Component } from 'react'
-
 const TableHeader = () => {
     return (
         <thead>
@@ -26,9 +24,11 @@ const TableBody = (props) => {
     })
 
     return <tbody>{rows}</tbody>
+
 }
 
 const Table = (props) => {
+
     const { characterData, removeCharacter } = props
 
     return (
@@ -38,5 +38,7 @@ const Table = (props) => {
         </table>
     )
 }
+
+
 
 export default Table
